@@ -6,29 +6,77 @@
     <title>Document</title>
     <style>
       body{
-        background-color: royalblue;
+        background-color: #f5f5f7ec;
+        font-family: Arial;
+      }
+      a{
+        text-decoration: none;
+        color: black;
+      }
+      a:hover{
+        color: #b3b3b4ec;
       }
       #secao{
-        padding: 10px;
+        padding: 30px;
         background-color: white;
-        border-radius: 5px;
+        border-radius: 3px;
         margin: auto;
         width: 600px;
+        box-shadow: black 1px 1px 5px 1px;
       }
       #imagem{
-        border-radius: 10px;
+        border-radius: 30px;
+        border: 5px solid #b3b3b4ec;
       }
       #nome{
         position: absolute;
-        top: 30px;
-        left: 500px;
+        top: 40px;
+        left: 510px;
         font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
         font-size: 24px;
+        font-style: italic;
       }
       #descricao{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: Arial;
         font-weight: normal;
         font-size: 18px;
+      }
+      #topo{
+        text-decoration: none;
+        color: black;
+      }
+      #redes{
+        font-weight: bold;
+      }
+      #skills{
+        font-weight: bold;
+      }
+      #links{
+        margin-top: 25px;
+        margin-left: 560px;
+      }
+      #contato{
+        position: absolute;
+        top: 110px;
+        left: 850px;
+      }
+      #img1{
+        position: absolute;
+        top: 410px;
+        left: 750px;
+      }
+      #img2{
+        position: absolute;
+        top: 430px;
+        left: 630px;
+      }
+      #trybe{
+        font-weight: bold;
+      }
+      #imgtrybe{
+        position: absolute;
+        top: 725px;
+        left: 675px;
       }
     </style>
   </head>
@@ -40,20 +88,44 @@
 
       <h1 id="nome">Oi, eu sou o Thiago!</h1>
 
-      <h2 id="descricao"></h2>
+      <div id="contato">
+        <a href="https://www.linkedin.com/in/thiago-henrique-da-silva-souza-634162127/" target="_blank"><img src="./download (1).png" alt="icone do linkedin" width="35px" id="icon_linkedin"></a>
+        <a href="https://github.com/ts-dart" target="_blank"><img src="./git.png" alt="icone do github" width="55px" id="icon_github" height="33px"></a>
+        <a href="https://www.instagram.com/ts.dat/" target="_blank"> <img src="./download (2).png" alt="icone do instagram" width="35px" id="icon_instagram"></a>
+      </div>
 
-      <p>Habilidades:</p>
+      <hr>
+      <p id="descricao"></p>
+
+      <p id="skills"><em>Habilidades:</em></p>
       <ul>
-        <li><strong>html</strong></li>
+        <li>html</li>
+        <br>
         <li>unix</li>
+        <br>
         <li>git/github</li>
+        <br>
+        <li>Photoshop</li>
       </ul>
 
-      <a href="#imagem">Voltar ao topo</a><br>  
+      <img src="./skills.png" alt="Imagem ilustrativa" width="100px" id="img1">
+      <img src="./skills2.png" alt="Imagem ilustrativa" width="130px" id="img2">
 
-      <a href="https://jovemnerd.com.br/" target="_blanck">Visite esse Blog ;)</a>
-
+      <p id="trybe"><em>Mais sobre a Trybe:</em></p>
+      <p id="texto sobre a trybe">A Trybe é uma escola de tecnologia que tem comprometimento genuíno com o sucesso
+        profissional das pessoas estudantes. Com o Modelo de Sucesso Compartilhado, quem
+        estuda na Trybe tem a opção de pagar apenas quando já estiver trabalhando.<br><br>
+        São mais de 1500 horas de formação que aborda fundamentos de desenvolvimento
+        web, desenvolvimento, Front-end, Back-end, ciência da computação, metodologias
+        ágeis e habilidades comportamentais.</p>
+      <p>Siba mais sobre a Trybe click na imagem</p><a href="https://www.betrybe.com/" target="__blank"><img src="./trybe.png" alt="logo da trybe" width="20pxd" id="imgtrybe"></a>
     </section>
+
+    <footer id="links">
+      <a href="#imagem" id="topo">Voltar ao topo - </a>
+      <a href="https://jovemnerd.com.br/" target="_blanck" id="blog">Visite esse Blog ;)</a>
+    </footer>
+
     <script>
       function saudacao(){
         let now = new Date();
@@ -70,8 +142,13 @@
           texto = "Boa noite";
         }
 
-        let descricao = document.querySelector('h2#descricao');
-        descricao.innerHTML = `Olá, ${texto}, tudo bem? Meu nome e Thiago Henrique da Silva Souza, sou natural do Brasil, moro em Coronel Fabriciano Minas Gerais.`;
+        let descricao = document.querySelector('p#descricao');
+
+        descricao.innerHTML = `Olá, ${texto},`; 
+
+        gambi = "tudo bem? seja bem vindo ao meu portfólio! meu nome e Thiago Henrique da Silva Souza, sou natural do Brasil, moro em Coronel Fabriciano Minas Gerais. <br><br> Sempre fui apaixonado por tecnologia, tive meu primeiro contato com codigo aos 14 anos mas nessa época não me aprofundei muito, atualmente estou estadando na trybe, faço um curso de desenvolvimento web fullstack.";
+
+        descricao.innerHTML += gambi;
       }
 
       saudacao();
