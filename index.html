@@ -4,87 +4,14 @@
   <head>
     <meta charset="UTF-8">
     <title>Meu Portfólio</title>
-    <style>
-      body{
-        background-color: #f5f5f7ec;
-        font-family: Arial;
-      }
-      a{
-        text-decoration: none;
-        color: black;
-      }
-      a:hover{
-        color: #b3b3b4ec;
-      }
-      #secao{
-        padding: 30px;
-        background-color: white;
-        border-radius: 3px;
-        margin: auto;
-        width: 600px;
-        box-shadow: black 1px 1px 5px 1px;
-      }
-      #imagem{
-        border-radius: 30px;
-        border: 5px solid #b3b3b4ec;
-      }
-      #nome{
-        position: absolute;
-        top: 57px;
-        left: 510px;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-size: 24px;
-        font-style: italic;
-      }
-      #descricao{
-        font-family: Arial;
-        font-weight: normal;
-        font-size: 18px;
-      }
-      #topo{
-        text-decoration: none;
-        color: black;
-      }
-      #redes{
-        font-weight: bold;
-      }
-      #skills{
-        font-weight: bold;
-      }
-      #links{
-        margin-top: 25px;
-        margin-left: 560px;
-      }
-      #contato{
-        position: absolute;
-        top: 110px;
-        left: 850px;
-      }
-      #img1{
-        position: absolute;
-        top: 393px;
-        left: 750px;
-      }
-      #img2{
-        position: absolute;
-        top: 403px;
-        left: 630px;
-      }
-      #trybe{
-        font-weight: bold;
-      }
-      #imgtrybe{
-        position: absolute;
-        top: 735px;
-        left: 675px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   
   <body>
-    <section id="secao">
+    
+    <header>
 
-      <img src="img.jpeg" alt="Imagem do dono do portfólio, imagem contem apenas o rosto de Thiago" width="100p" id="imagem">
+      <img src="img.jpeg" alt="Imagem do dono do portfólio, imagem contem apenas o rosto de Thiago" width="4%" id="imagem">
 
       <h1 id="nome">Oi, eu sou o Thiago!</h1>
 
@@ -94,7 +21,10 @@
         <a href="https://www.instagram.com/ts.dat/" target="_blank"> <img src="./instagram.png" alt="icone do instagram" width="35px" id="icon_instagram"></a>
       </div>
 
-      <hr>
+    </header>
+
+    <section id="secao">
+
       <p id="descricao"></p>
 
       <p id="skills"><em>Habilidades:</em></p>
@@ -126,33 +56,7 @@
       <a href="https://jovemnerd.com.br/" target="_blanck" id="blog">Visite esse Blog ;)</a>
     </footer>
 
-    <script>
-      function saudacao(){
-        let now = new Date();
-        let hora = now.getHours();
-        let texto;
-
-        if (hora >= 6 && hora < 12){
-          texto = "Bom dia";
-        }
-        else if (hora > 12 && hora < 18){
-          texto = "Boa tarde";
-        }
-        else if (hora >= 18 || hora >= 0 && hora < 6){
-          texto = "Boa noite";
-        }
-
-        let descricao = document.querySelector('p#descricao');
-
-        descricao.innerHTML = `Olá, ${texto},`; 
-
-        gambi = "tudo bem? seja bem vindo ao meu portfólio! meu nome e Thiago Henrique da Silva Souza, sou natural do Brasil, moro em Coronel Fabriciano Minas Gerais. <br><br> Sempre fui apaixonado por tecnologia, tive meu primeiro contato com codigo aos 14 anos mas nessa época não me aprofundei muito, atualmente estou estadando na trybe, faço um curso de desenvolvimento web fullstack.";
-
-        descricao.innerHTML += gambi;
-      }
-
-      saudacao();
-    </script>
+    <script src="script.js"></script>
   </body>
 
 </html>
