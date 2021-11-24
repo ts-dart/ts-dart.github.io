@@ -7,7 +7,7 @@ body{
     color: black;
   }
   a:hover{
-    color: #b3b3b4ec;
+    color: #2b9720;
   }
   p{
     line-height: 1.7;
@@ -51,6 +51,13 @@ body{
   #topo{
     text-decoration: none;
     color: black;
+    box-shadow: 5px 5px 5px 5px rgb(0 0 0 / 10%);
+    padding: 10px;
+    border-radius: 50px;
+    background-color: white;
+    position: fixed;
+    top: 90%;
+    left: 97%;
   }
   #redes{
     font-weight: bold;
@@ -66,6 +73,7 @@ body{
     position: fixed;
     top: 90px;
     left: 1300px;
+    height: 150px;
   }
   #icon_github{
     margin-left: -17%;
@@ -85,6 +93,46 @@ body{
   }
   #imgtrybe{
     position: absolute;
-    top: 163%;
-    left: 710px;
+    top: 154%;
+    left: 698px;
+  }
+  #quem_sou_eu{
+    color: white;
+  }
+  #quem_sou_eu:hover{
+    color: #2b9720;
+  }
+  #quem_sou_eu:active{
+    color: black;
+  }
+  #habilidades{
+    color: white;
+  }
+  #habilidades:hover{
+    color: #2b9720;
+  }
+  #habilidades:active{
+    color: black;
+  }
+  #sobre_trybe{
+    color: white;
+  }
+  #sobre_trybe:hover{
+    color: #2b9720;
+  }
+  #sobre_trybe:active{
+    color: black;
+  }
+  #contact{
+    color: white;
+    cursor: pointer;
+  }
+  #contact:hover{
+    color: #2b9720;
+  }
+  #contact:active{
+    color: black;
+  }
+  .sumario{
+    margin-top: 25px;
   }
