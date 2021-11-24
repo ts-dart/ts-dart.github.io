@@ -20,6 +20,17 @@ function saudacao(){
     gambi = "tudo bem? seja bem vindo ao meu portfólio! meu nome e <strong>Thiago Henrique da Silva Souza</strong>, sou natural do Brasil, moro em Coronel Fabriciano Minas Gerais. <br><br> Sempre fui apaixonado por tecnologia, tive meu primeiro contato com codigo aos 14 anos mas nessa época não me aprofundei muito, atualmente estou estadando na trybe, faço um curso de <strong>desenvolvimento web fullstack.</strong>";
 
     descricao.innerHTML += gambi;
-  }
+
+    let cb = document.querySelector('p#contact');
+    let cc = document.querySelector('div#contato');
+
+    cb.addEventListener('click', () => {
+      cc.style.backgroundColor = 'green';
+    })
+
+    cb.addEventListener('mouseout', () => {
+      cc.style.backgroundColor = 'white';
+    })
+}
 
   saudacao();
