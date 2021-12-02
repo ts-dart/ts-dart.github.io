@@ -31,6 +31,23 @@ function saudacao(){
     cb.addEventListener('mouseout', () => {
       cc.style.backgroundColor = 'white';
     })
+
+    
+    let bt = document.querySelector('a#topo');
+
+   bt.addEventListener('mouseenter', () => {
+      bt.style.left = '90%';
+      bt.style.width = '70px';
+      bt.style.fontsize = '5';
+
+      bt.innerHTML = "Voltar ao topo";
+  })
+
+    bt.addEventListener('mouseout', () => {
+      bt.style.left = '97%';
+      bt.style.width = '10px';
+      bt.innerHTML = "";
+    })
 }
 
   saudacao();
