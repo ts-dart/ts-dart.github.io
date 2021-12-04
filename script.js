@@ -37,7 +37,7 @@ function saudacao(){
 
    bt.addEventListener('mouseenter', () => {
       bt.style.left = '90%';
-      bt.style.width = '70px';
+      bt.style.width = '100px';
       bt.style.fontsize = '5';
 
       bt.innerHTML = "Voltar ao topo";
@@ -46,7 +46,7 @@ function saudacao(){
     bt.addEventListener('mouseout', () => {
       bt.style.left = '97%';
       bt.style.width = '10px';
-      bt.innerHTML = "";
+      bt.innerHTML = "/";
     })
 }
 
