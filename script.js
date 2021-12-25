@@ -26,8 +26,6 @@ function saudacao(){
 
     cb.addEventListener('click', () => {
       cc.style.backgroundColor = "#D3D3D3";
-      cc.style.borderRadius = "10px";
-      cc.style.padding = "5px";
     })
 
     cb.addEventListener('mouseout', () => {

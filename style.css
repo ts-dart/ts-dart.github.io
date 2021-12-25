@@ -136,3 +136,9 @@ body{
   .sumario{
     margin-top: 25px;
   }
+
+  #contato {
+    border-radius: 10px;
+    padding: 5px;
+    height: 115px;
+  }
