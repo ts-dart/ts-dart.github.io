@@ -25,7 +25,7 @@ function saudacao(){
     let cc = document.querySelector('div#contato');
 
     cb.addEventListener('click', () => {
-      cc.style.backgroundColor = 'green';
+      cc.style.backgroundColor = "#D3D3D3";
     })
 
     cb.addEventListener('mouseout', () => {
